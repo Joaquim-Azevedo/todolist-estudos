@@ -1,6 +1,6 @@
 * {
   height: auto;
-  width: 100%;
+  width: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 body {
   background: url(/img/background1.jpg);
-  background-size: 200vh;
+  background-size: 100%;
 }
 
 .container {
@@ -18,9 +18,7 @@ body {
   width: 500px;
   border-radius: 10px;
   padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
+  margin: 100px auto 100px;
 }
 
 .input-text {
@@ -77,6 +75,7 @@ body {
   margin-bottom: 15px;
   cursor: pointer;
   text-align: center;
+  transition: text-decoration 2s ease-in-out;
 }
 
 img {
