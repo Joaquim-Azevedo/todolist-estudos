@@ -10,7 +10,7 @@
 
 body {
   background: url(/img/background1.jpg);
-  background-size: 90%;
+  background-size: 200vh;
 }
 
 .container {
@@ -18,7 +18,9 @@ body {
   width: 500px;
   border-radius: 10px;
   padding: 20px;
-  margin: 100px auto 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
 }
 
 .input-text {
@@ -42,7 +44,7 @@ body {
   align-items: center;
   background: #ffaa00;
   font-size: 13pt;
-  padding: 0 17px;
+  padding: 0 15px;
   cursor: pointer;
   font-weight: 700;
   color: #000;
@@ -67,6 +69,7 @@ body {
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   height: 45px;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
