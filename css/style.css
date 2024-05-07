@@ -1,6 +1,6 @@
 * {
   height: auto;
-  width: auto;
+  width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,7 +37,9 @@ body {
   border: none;
   border-radius: 10px;
   height: 40px;
+  width: 100px;
   float: right;
+  align-items: center;
   background: #ffaa00;
   font-size: 13pt;
   padding: 0 17px;
@@ -71,10 +73,12 @@ body {
   border-radius: 10px;
   margin-bottom: 15px;
   cursor: pointer;
+  text-align: center;
 }
 
 img {
   height: 30px;
+  width: 30px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
