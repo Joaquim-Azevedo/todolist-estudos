@@ -3,17 +3,21 @@
 const textInput = document.querySelector(".input-text");
 const addButton = document.querySelector(".add-button");
 const allTasks = document.querySelector(".list-tasks");
-
 let itemsList = [];
 
 // Funções
 
-function checkBlank() {
+function checks() {
+let textlength = textInput.value.length;
+  // Check de espaço em branco
+
   if (textInput.value == "") {
     console.log("Espaço em branco.");
   } else {
     addTask();
   }
+  
+
 }
 
 function addTask() {
@@ -41,7 +45,7 @@ function showTasks() {
   });
   allTasks.innerHTML = newLi;
 
-  localStorage.setItem("list", JSON.stringify(itemsList));
+  // localStorage.setItem("list", JSON.stringify(itemsList));
 }
 
 function deleteItem(index) {
@@ -60,18 +64,18 @@ function doneItem(index) {
   }
 }
 
-function reloadTasks() {
-  const storageTasks = localStorage.getItem("list");
+// function reloadTasks() {
+//   const storageTasks = localStorage.getItem("list");
 
-  if (storageTasks) {
-    itemsList = JSON.parse(storageTasks);
-  }
+//   if (storageTasks) {
+//     itemsList = JSON.parse(storageTasks);
+//   }
 
-  showTasks();
-}
+//   showTasks();
+// }
 
-reloadTasks();
+// reloadTasks();
 
 // Eventos
 
-addButton.addEventListener("click", checkBlank);
+addButton.addEventListener("click", checks);
